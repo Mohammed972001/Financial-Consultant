@@ -1,0 +1,39 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* High-contrast colors for dark backgrounds (WCAG AA+) */
+:root {
+  --text-muted: #b8b8b8;      /* ~7:1 on #0a0a0a */
+  --text-muted-strong: #d0d0d0; /* ~9:1 on #0a0a0a */
+  --text-subtle: #a0a0a0;     /* ~5.5:1 on #0a0a0a */
+  --text-faint: #8a8a8a;      /* ~4.5:1 on #0a0a0a */
+  --gold: #D4AF37;
+  --gold-hover: #E5C04A;
+}
+
+/* Global smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C04A;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(212, 175, 55, 0.25);
+  color: #fff;
+}
